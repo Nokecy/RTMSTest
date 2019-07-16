@@ -19,7 +19,7 @@ namespace Anub.Abp.RtmpServers
 
         public bool Start()
         {
-            var rtmpPacket = new RtmpPacket(this);
+            var rtmpPacket = new RtmpServerPacket(this);
             server = SocketFactory.CreateTcpServer(this, rtmpPacket).Setting(setting =>
             {
                 //setting.DefaultListen.Host = Options.Host;

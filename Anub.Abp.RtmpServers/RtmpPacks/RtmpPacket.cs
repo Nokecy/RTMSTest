@@ -2,7 +2,7 @@
 
 namespace Anub.Abp.RtmpServers.RtmpPacks
 {
-    class RtmpPacket
+    public class RtmpPacket
     {
         public RtmpHeader Header { get; set; }
         public RtmpMessage Body { get; set; }
